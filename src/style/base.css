@@ -1,0 +1,23 @@
+:root {
+    /* ESCALA DE PRETO */
+    --color-black: #212529;
+
+    /* ESCALA DE BRANCO */
+    --color-white: #FFFFFF;
+
+    /* ESCALA DE CINZA */
+    --color-grey-1: #515252;
+    --color-grey-2: #F1F3F5;
+    --color-grey-3: #868E96;
+
+    /* ESCALA DE VERDE */
+    --color-acqua-green: #12B886;
+
+    /* SOMBRA  */
+    --color-shadow-header: 0px 4px 40px -20px rgba(0, 0, 0, 0.25);
+    --color-shadow-calculo: 0px 4px 30px -10px rgba(0, 0, 0, 0.25);
+
+
+    /* FONTE */
+    --fonte-base: 'Inter', sans-serif;
+}

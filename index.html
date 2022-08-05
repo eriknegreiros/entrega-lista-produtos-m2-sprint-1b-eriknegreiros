@@ -1,84 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/css/reset.css" />
-    <link rel="stylesheet" href="./src/css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fontawesome.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <title>Lista de Produtos</title>
-  </head>
-  <body>
-    <!-- CABEÇALHO -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style/reset.css">
+    <link rel="stylesheet" href="./src/style/base.css">
+    <link rel="stylesheet" href="./src/style/style.css">
+    <title>Document</title>
+</head>
+
+<body>
     <header>
-      <h1>Shop now</h1>
+        <h1 class="tituloPage">Negreiros Market</h1>
     </header>
-    <!-- PARTE PRINCIPAL -->
-    <main>
-      <section class="filtersContainer">
-        <div id="botoesContainer">
-          <button class="estiloGeralBotoes estiloGeralBotoes--filter">
-            Todos Produtos
-          </button>
-          <button class="estiloGeralBotoes estiloGeralBotoes--filter">
-            Hortifruti
-          </button>
-          <button class="estiloGeralBotoes estiloGeralBotoes--filter">
-            Panificadora
-          </button>
-          <button class="estiloGeralBotoes estiloGeralBotoes--filter">
-            Laticínios
-          </button>
+
+
+    <div class="displayFlex">
+    <section id="botoes">  
+        <div class="divBotao">
+            <button class="botaoSecaoUnico">Todos Produtos</button>
+            <button class="botaoSecaoHortifruti">Hortifruit</button>
+            <button class="botaoSecaoPanificadora">Panificadora</button>
+            <button class="botaoSecaoLaticinios">Laticínios</button>
         </div>
 
-        <div class="containerBuscaPorNome">
-          <input
-            type="text"
-            placeholder="Pesquisar por"
-            class="campoBuscaPorNome"
-          />
-          <button
-            class="estiloGeralBotoes estiloGeralBotoes--botaoBuscaPorNome"
-          >
-            <img src="./src/img/search.png" alt="lupa" />
-          </button>
-        </div>
-      </section>
-      <section class="priceContainer">
-        <div>
-            <img src="./src/img/alert-circle.png" alt="exclamação de alerta">
-            <p>Valor total dos produtos da sessão selecionada</p>
-        </div>
-        <span>R$ 0.00</span>
-      </section>
-      <!-- CONTAINER DE PRODUTOS -->
-      <section class="containerVitrine">
-        <div class="containerListaProdutos">
-         <ul>
-                    <!-- Utilize esse item html como template para a construção da lista de produtos
-                    
-                    Você pode remover esses comentários depois que fizer a construção pelo DOM -->
-                    
+    </section>
+
+    <div class="barraDePesquisa">
+        <input class="caixaDeTexto" type="text" placeholder="Pesquisar por">
+        <button class="botaoPesquisar"> <img src="./src/img/search.png" alt="Icone de Pesquisa"></button>
+    </div>
+
+    </div>
+
+    <main>
+        <ul class="listaDeCard"></ul>
+
+    <section class="carrinhoDeCompras ">
+        <div class="carrinhoInteiro">
+                
+               
+            <div class="borda">
+                    <img class="imagemBorda" src="./src/img/carrin.png" width="12px" height="12px" alt="">
+                    <p class="bordaCarrinho">Carrinho</p>
+                </div>
+               
+                <div class="semProdutosNoCarrinho">
+                <img class="imagemCarrin" src="./src/img/addcarrin.png" width="80px" height="80px" alt="">
+                    <p class="mensagemCarrinhoVazio">Por enquanto não temos produtos no carrinho</p>
+            </div>
+
+           
+            <div class="carrinhoComProdutos">
+                
+            </div>
+
             
-                    <!-- <li>
-                        <img src="./src/img/maça.png" alt="Imagem maçã">
-                        <h3>Maçã</h3>
-                        <span>Hortifruti</span>
-                        <p>R$ 2.00</p>
-                    </li> -->
-                    
-                </ul>
+
+            <div class="divPrincipalQuantidadeTotal none">
+            <div class="quantidadeCarrinho  ">
+                <p class="quantidadeCarrinhoParagrafo">Quantidade</p>
+                <p class="valorNumericoQuantidadeDeProdutos"></p>
+            </div>
+            <div class="valorTotalCarrinho  ">
+                <p class="totalCarrinhoParagrafo">Total</p>
+                <p class="valorNumericovalorDosProdutos"></p>
+            </div> 
+
         </div>
-      </section>
-    </main>
-    <script src="./src/js/dataProdutos.js"></script>
-    <script src="./src/js/script.js"></script>
-  </body>
+        
+        </div>
+        
+    </section>
+
+</main>
+    <script src="./src/script/data.js"></script>
+    <script src="./src/script/script.js"></script>
+</body>
+
 </html>
